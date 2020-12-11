@@ -14,7 +14,8 @@ app.use(productRoutes)
 async function start() {
     try {
       await mongoose.connect(
-        'mongodb+srv://user:user@cluster0.bngw9.mongodb.net/test?retryWrites=true&w=majority',
+        // УКАЗАТЬ ПУТЬ ДО MongoDB
+        '',
         {
           useNewUrlParser: true,
           useFindAndModify: false
